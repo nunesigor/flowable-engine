@@ -21,3 +21,10 @@ modules/flowable-app-rest/src/main/resources/static/docs/specfile
 userguide-dmn/src/en/output
 userguide-form/src/en/output
 userguide-cmmn/src/en/output
+modules/flowable-app-rest/.factorypath
+modules/flowable-ui-admin/flowable-ui-admin-app/.factorypath
+modules/flowable-ui-admin/flowable-ui-admin-app/.tern-project
+modules/flowable-ui-idm/flowable-ui-idm-app/.factorypath
+modules/flowable-ui-modeler/flowable-ui-modeler-app/.factorypath
+modules/flowable-ui-task/flowable-ui-task-app/.factorypath
+modules/flowable-ui-task/flowable-ui-task-conf/.factorypath
