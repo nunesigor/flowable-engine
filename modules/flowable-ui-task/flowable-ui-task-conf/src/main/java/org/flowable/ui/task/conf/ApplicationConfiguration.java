@@ -29,7 +29,9 @@ import org.springframework.context.annotation.Configuration;
         "org.flowable.ui.common.repository",
         "org.flowable.ui.common.service",
         "org.flowable.ui.common.filter",
-        "org.flowable.ui.common.security" })
+        "org.flowable.ui.common.security",
+        "br.com.unionti.bpm"
+})
 public class ApplicationConfiguration {
 
 }
