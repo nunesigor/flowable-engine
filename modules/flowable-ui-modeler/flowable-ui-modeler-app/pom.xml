@@ -9,6 +9,10 @@
     </parent>
     <artifactId>flowable-ui-modeler-app</artifactId>
     <packaging>war</packaging>
+    
+    <properties>
+        <tomcat-home>/home/dev/tools/tomcat-9.0.8</tomcat-home>
+    </properties>
 
     <dependencies>
 
@@ -269,6 +273,27 @@
                     </excludeArtifactIds>
                 </configuration>
             </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <configuration>
+                    <target>
+                        <copy file="target/${project.build.finalName}.war" 
+                              tofile="${tomcat-home}/webapps/${project.build.finalName}.war"/>
+                    </target>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            
         </plugins>
 
     </build>
