@@ -21,6 +21,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.config.core.GrantedAuthorityDefaults;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -37,6 +38,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
     SecurityConfiguration.class,
     DevelopmentConfiguration.class
 })
+@ComponentScan({"org.flowable.rest.app", "br.com.unionti.bpm"})
 @SpringBootApplication
 public class FlowableRestApplication extends SpringBootServletInitializer {
 
