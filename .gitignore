@@ -28,3 +28,4 @@ modules/flowable-ui-idm/flowable-ui-idm-app/.factorypath
 modules/flowable-ui-modeler/flowable-ui-modeler-app/.factorypath
 modules/flowable-ui-task/flowable-ui-task-app/.factorypath
 modules/flowable-ui-task/flowable-ui-task-conf/.factorypath
+*.factorypath
